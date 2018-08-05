@@ -1,5 +1,6 @@
 {
     "name": "moefar/influxdb",
+    "version": "1.1.0",
     "description": "Laravel package for influx DB",
     "authors": [
         {

@@ -3,9 +3,13 @@
 namespace Moefar\InfluxDB\Providers;
 
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
-use InfluxDB\Client as InfluxClient;
-use InfluxDB\Database as InfluxDB;
+use InfluxDB\Client as IFXClient;
+use InfluxDB\Database as IFXDatabase;
 
+/**
+ * Class InfluxDBServiceProvider
+ * @package Moefar\InfluxDB\Providers
+ */
 class InfluxDBServiceProvider extends LaravelServiceProvider
 {
     /**
@@ -32,8 +36,8 @@ class InfluxDBServiceProvider extends LaravelServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(InfluxDB::class, function($app) {
-            $client = new InfluxClient(
+        $this->app->singleton(IFXDatabase::class, function($app) {
+            $client = new IFXClient(
                 config('ifx_db.host'),
                 config('ifx_db.port'),
                 config('ifx_db.username'),
@@ -53,7 +57,7 @@ class InfluxDBServiceProvider extends LaravelServiceProvider
     public function provides()
     {
         return [
-            InfluxDB::class,
+            IFXDatabase::class,
         ];
     }
 }
