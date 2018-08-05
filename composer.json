@@ -1,0 +1,20 @@
+{
+    "name": "moefar/influxdb",
+    "description": "Laravel package for influx DB",
+    "authors": [
+        {
+            "name": "Moe Far",
+            "email": "moefar1985@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Moefar\\InfluxDB\\": "src/"
+        }
+    },
+    "require": {
+        "influxdb/influxdb-php": "^1.14"
+    }
+}
