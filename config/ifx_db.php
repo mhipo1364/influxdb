@@ -1,4 +1,9 @@
 <?php
+/**
+ * Config for influxDB broker
+ *
+ * @author Moe Far <moefar1985@gmail.com>
+ */
 
 return [
     'host' => env('_IFX_HOST', 'localhost'),
