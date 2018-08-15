@@ -2,7 +2,6 @@
     "name": "moefar/influxdb",
     "keywords": ["influx-db", "laravel-package", "db-handler"],
     "license": "MIT",
-    "version": "1.2.0",
     "description": "Laravel package for influx DB",
     "authors": [
         {
