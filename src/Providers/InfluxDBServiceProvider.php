@@ -41,7 +41,7 @@ class InfluxDBServiceProvider extends LaravelServiceProvider
     {
         $this->publishes(
             [
-            __DIR__ . '../../../config/ifx_db.php' => config_path('influxdb.php')
+            __DIR__ . '/../../config/ifx_db.php' => config_path('influxdb.php')
             ]
         );
     }
