@@ -10,7 +10,6 @@
             "email": "moefar1985@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "type": "library",
     "autoload": {
         "psr-4": {
